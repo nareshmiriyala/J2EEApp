@@ -1,22 +1,27 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-xmlns:h="http://xmlns.jcp.org/jsf/html">
-<h:body>
-<ui:composition template="./template.xhtml">
-<ui:define name="top">
-Welcome to Template Client Page
-</ui:define>
-<ui:define name="left">
-<h:outputLabel value="You are in the Left Section"/>
-</ui:define>
-<ui:define name="content">
-<h:outputText value="You are in the Main Content Section"/>
-</ui:define>
-    <ui:define name="right">
-<h:outputText value="You are in the right Section"/>
-</ui:define>
-</ui:composition>
-</h:body>
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:em="http://xmlns.jcp.org/jsf/composite/ezcomp">
+    <h:body>
+        <h:form>
+            <ui:composition template="./template.xhtml">
+                <ui:define name="top">
+                    Welcome to Template Client Page
+                </ui:define>
+                <ui:define name="left">
+                    <h:outputLabel value="You are in the Left Section"/>
+                </ui:define>
+                <ui:define name="content">
+                    <h:outputText value="You are in the Main Content Section"/>
+                    <em:email value="Enter your email id" />
+                </ui:define>
+                <ui:define name="right">
+                    <h:outputText value="You are in the right Section"/>
+                </ui:define>
+            </ui:composition>
+        </h:form>
+
+    </h:body>
 </html>
