@@ -2,22 +2,55 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
 
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <h:outputStylesheet name="./css/default.css"/>
         <h:outputStylesheet name="./css/cssLayout.css"/>
+         <!-- Font Awesome -->
+    <h:outputStylesheet library="css" name="font-awesome.min.css"/>
+    <!-- Bootstrap -->
+    <h:outputStylesheet library="css" name="bootstrap.min.css"/>
+    <!-- Camera -->
+    <h:outputStylesheet library="css" name="camera.css"/>
+    <!-- Template  -->
+    <h:outputStylesheet library="css" name="templatemo_style.css"/>
         <title>Facelets Template</title>
     </h:head>
 
     <h:body>
 
-        <div id="top">
-            <ui:insert name="top"></ui:insert>
+       
+<!--           <h3>Welcome to Youtube Indian Movies page</h3>-->
+
+    <div id="templatemo_banner_menu">
+        
+        <div class="container-fluid">
+            <div class="col-xs-4 templatemo_logo">
+            	<a rel="nofollow">
+                	
+                	<h1 id="logo_text">Youtube<span>Movies</span></h1>
+                </a>
+            </div>
+            <div class="col-sm-8 hidden-xs">
+               
+                <ul class="nav nav-justified">
+                    <li><h:commandLink value="Home" action="index"/></li>
+                    <li><a href="#templatemo_about">About</a></li>
+                    <li><a href="#templatemo_events">Events</a></li>
+                    <li><a href="#templatemo_timeline">Timeline</a></li>
+                    <li><a href="#templatemo_contact">Contact</a></li>
+                </ul>
+                       
+            </div>
+            <div class="col-xs-8 visible-xs">
+                <a href="#" id="mobile_menu"><span class="glyphicon glyphicon-th-list"></span></a>
+            </div>
         </div>
-        <div>
-            <ui:include src="header.xhtml"/>
+         <div>
+            <ui:include src="header.xhtml"></ui:include>
             <div id="left">
                 <ui:insert name="left">Left</ui:insert>
             </div>
@@ -29,7 +62,19 @@
                     <ui:insert name="content">Content</ui:insert>
                 </div>
             </div>
-        </div>        
-    </h:body>
+        </div>      
+            
+    </div>
 
+           
+        
+       
+    </h:body>
+<h:outputScript library="js" name="jquery.min.js"/>
+<h:outputScript library="js" name="jquery-ui.min.js"/>
+<h:outputScript library="js" name="bootstrap.min.js"/>
+<h:outputScript library="js" name="jquery.singlePageNav.min.js"/>
+<h:outputScript library="js" name="unslider.min.js"/>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+<h:outputScript library="js" name="templatemo_script.js"/>
 </html>
