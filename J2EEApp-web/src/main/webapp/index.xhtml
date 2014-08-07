@@ -4,6 +4,7 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
        xmlns:f="http://xmlns.jcp.org/jsf/core"
+       xmlns:jsf="http://xmlns.jcp.org/jsf"
            xmlns:ez="http://xmlns.jcp.org/jsf/composite/ezcomp">
     <h:body>
         <h:form>
@@ -15,10 +16,11 @@
                 <ui:define name="content">
                    <div id="compositeComponent">
                 <ez:LoginPanel myLoginBean="#{myLoginBean}" 
-                               loginAction="#{myLoginBean.login}">
+                               loginAction="#{myLoginBean.login}" >
                     <f:validateLength maximum="10" minimum="4" for="vals" />
                     <f:validateRegex pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,10})"
                                      for="passwordVal"/>
+                    
                 </ez:LoginPanel>
             </div>
                    
