@@ -23,7 +23,7 @@ import javax.persistence.PersistenceContext;
  * @author ian
  */
 @Stateless
-public class ContactFacade extends AbstractFacade<UserDetails> {
+public class UserDetailsFacade extends AbstractFacade<UserDetails> {
     @PersistenceContext(unitName = "persistence")
     private EntityManager em;
 
@@ -32,8 +32,8 @@ public class ContactFacade extends AbstractFacade<UserDetails> {
         return em;
     }
 
-    public ContactFacade() {
+    public UserDetailsFacade() {
         super(UserDetails.class);
     }
-
+  
 }
