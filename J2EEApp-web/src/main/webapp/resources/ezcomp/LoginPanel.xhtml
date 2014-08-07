@@ -3,11 +3,7 @@
       xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:composite="http://java.sun.com/jsf/composite">
-    <h:head>
-        <title>This will not be present in rendered output</title>
-    </h:head>
-
-    <h:body>
+      
         <composite:interface>
             <composite:attribute name="namePrompt" default="Username: "/>
             <composite:attribute name="passwordPrompt" default="Password: "/>
@@ -22,8 +18,7 @@
 
         <composite:implementation>
             <h:form id="form">
-                <h:outputStylesheet library="css" name="default.css" 
-                                    />
+                
                 <h:panelGrid columns="2" role="presentation">
                     <h:outputLabel for="name" 
                                    value="#{cc.attrs.namePrompt}"/>
@@ -40,11 +35,10 @@
                     <h:commandButton id="loginButton" 
                                      value="#{cc.attrs.loginButtonText}"
                                      action="#{cc.attrs.loginAction}"/>
-                   
-                 
+            
                 </p>
             </h:form>
             
         </composite:implementation>
-    </h:body>
+  
 </html>

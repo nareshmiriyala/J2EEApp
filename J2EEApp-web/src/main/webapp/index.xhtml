@@ -3,34 +3,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-       xmlns:f="http://xmlns.jcp.org/jsf/core"
-       xmlns:jsf="http://xmlns.jcp.org/jsf"
-           xmlns:ez="http://xmlns.jcp.org/jsf/composite/ezcomp">
-    <h:body>
-        <h:form>
-            <ui:composition template="./template.xhtml">
-               
-                <ui:define name="left">
-                    <h:outputLabel value="You are in the Left Section"/>
-                </ui:define>
-                <ui:define name="content">
-                   <div id="compositeComponent">
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ez="http://xmlns.jcp.org/jsf/composite/ezcomp">
+
+
+
+    <ui:composition template="template.xhtml">
+
+
+        <ui:define name="content">
+            <h:form>
+                <!--                <div id="compositeComponent">-->
                 <ez:LoginPanel myLoginBean="#{myLoginBean}" 
                                loginAction="#{myLoginBean.login}" >
                     <f:validateLength maximum="10" minimum="4" for="vals" />
                     <f:validateRegex pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,10})"
                                      for="passwordVal"/>
-                    
-                </ez:LoginPanel>
-                       <h:link outcome="registraruser" value="registraruser"/>
-            </div>
-                   
-                </ui:define>
-                <ui:define name="right">
-                    <h:outputText value="You are in the right Section"/>
-                </ui:define>
-            </ui:composition>
-        </h:form>
 
-    </h:body>
+                </ez:LoginPanel>
+                <h:link outcome="registraruser" value="registraruser"/>
+                <!--</div>-->
+            </h:form> 
+        </ui:define>
+
+    </ui:composition>
+
+
+
 </html>
