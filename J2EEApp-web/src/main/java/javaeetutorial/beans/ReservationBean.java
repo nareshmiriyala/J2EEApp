@@ -5,7 +5,7 @@
  * compliance with the terms of the License at:
  * http://java.net/projects/javaeetutorial/pages/BerkeleyLicense
  */
-package javaeetutorial.reservation;
+package javaeetutorial.beans;
 
 import java.io.Serializable;
 import javax.enterprise.context.SessionScoped;

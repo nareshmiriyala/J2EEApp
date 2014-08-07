@@ -16,8 +16,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <glassfish.directory>C:\glassfish4\glassfish</glassfish.directory>
     </properties>
-  
+
     <build>
         <plugins>
             <plugin>

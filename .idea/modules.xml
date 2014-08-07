@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/J2EEApp.iml" filepath="$PROJECT_DIR$/J2EEApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/J2EEApp-ear/J2EEApp-ear.iml" filepath="$PROJECT_DIR$/J2EEApp-ear/J2EEApp-ear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/J2EEApp-ejb/J2EEApp-ejb.iml" filepath="$PROJECT_DIR$/J2EEApp-ejb/J2EEApp-ejb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/J2EEApp-web/J2EEApp-web.iml" filepath="$PROJECT_DIR$/J2EEApp-web/J2EEApp-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/J2EEApp-ejb/src/main/main.iml" filepath="$PROJECT_DIR$/J2EEApp-ejb/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/J2EEApp-web/src/main/main1.iml" filepath="$PROJECT_DIR$/J2EEApp-web/src/main/main1.iml" />
+    </modules>
+  </component>
+</project>
+
